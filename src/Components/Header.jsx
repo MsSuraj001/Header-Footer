@@ -12,12 +12,13 @@ function Header() {
         })
     })
     useGSAP( ()=>{
-        gsap.from('#box2', {
+        gsap.from('#box2 li', {
            x:40,
            duration: 1,
            opacity:0,
            delay: 0.7,
-           scrub : 2
+           scrub : 2,
+           stagger: 0.3
         })
     })
   return (
